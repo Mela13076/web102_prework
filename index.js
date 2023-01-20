@@ -29,7 +29,7 @@ const gamesContainer = document.getElementById("games-container");
 function addGamesToPage(games) {
 
     // loop over each item in the data
-
+    
 
         // create a new div element, which will become the game card
 
