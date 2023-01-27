@@ -45,9 +45,8 @@ function addGamesToPage(games) {
         
         newDiv.innerHTML = `<img src="${games[i].img}" width = 100%>
         <h2> ${games[i].name}</h2>
-        <p>${games[i].description}
-        This game was pledged by ${games[i].pledged} players.
-        The gaol was ${games[i].goal} and we had ${games[i].backers} backers.</p>`
+        <p>${games[i].description} </p>
+        <p>Backers: ${games[i].backers}</p>`
         
     
     // append the game to the games-container
@@ -68,7 +67,7 @@ addGamesToPage(GAMES_JSON);
 // grab the contributions card element
 const contributionsCard = document.getElementById("num-contributions");
 
-// use reduce() to count the number of total contributions by summing the backers
+// use reduce() to count the number of total contributions by summing the backers 
 
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
