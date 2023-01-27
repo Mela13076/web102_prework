@@ -27,7 +27,7 @@ body {
 }
 
 .stats-container:hover{
-box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
