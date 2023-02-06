@@ -238,10 +238,10 @@ secondGameContainer.append(newP2);
     });
   }); */
 
-  //Initially display all products
-/*window.onload = () => {
+  //Initially display all games
+window.onload = () => {
     deleteChildElements(gamesContainer);
     addGamesToPage(GAMES_JSON);
-  };*/
+  };
 
 
