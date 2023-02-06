@@ -19,15 +19,19 @@ body {
     margin-top: -10px;
 }
 
+
 /* CSS rule for stats-container*/
 .stats-container{
     display: flex;
     align-items:center;
-    cursor: pointer
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
 }
 
 .stats-container:hover{
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.1);
 }
 
 .stats-card {
