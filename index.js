@@ -44,7 +44,7 @@ function addGamesToPage(games) {
         // between the end of the src attribute and the end of the tag ("/>")
         
         newDiv.innerHTML = `<img src="${games[i].img}" class="game-img">
-        <h2> ${games[i].name}</h2>
+        <h2 class="game-name"> ${games[i].name}</h2>
         <p>${games[i].description} </p>
         <p>Backers: ${games[i].backers}</p>`
         
@@ -202,3 +202,46 @@ firstGameContainer.append(newP);
 const newP2 = document.createElement('p');
 newP2.innerHTML = `${secondGame}`
 secondGameContainer.append(newP2);
+
+/************************************************************************************
+ * Customizations: add new features to the site!
+ * first customization: adding search option
+ */
+
+//search button click ......need to add button and id 
+/*document.getElementById("search-btn").addEventListener("click", () => {
+    //initializations
+    let searchInput = document.getElementById("search-input").value;
+    let gameName = document.querySelectorAll(".game-name");
+    let cards = document.querySelectorAll(".game-card");
+    //loop through all elements
+    gameName.forEach((element, index) => {
+      //check if text includes the search value
+      if (element.innerText.includes(searchInput.toUpperCase())) {
+        //display matching card
+        deleteChildElements(gamesContainer);
+        const match = GAMES_JSON.filter(games => {
+            if(games.includes(value.toUpperCase()) ){
+                return games.name
+            }
+        addGamesToPage(match)
+        })
+      } else {
+        //hide others
+        const noMatch = GAMES_JSON.filter(games => {
+            if(!games.includes(value.toUpperCase())){
+                return games.name
+            }
+        addGamesToPage(noMatch)
+        })
+      }
+    });
+  }); */
+
+  //Initially display all products
+/*window.onload = () => {
+    deleteChildElements(gamesContainer);
+    addGamesToPage(GAMES_JSON);
+  };*/
+
+

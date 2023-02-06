@@ -74,13 +74,51 @@ body {
 }
 
 #button-container {
-    text-align: center;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
 }
 
-button {
+button,
+#search-container {
     font-family: 'Cabin';
     border: none;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
 }
+
+#search-container{
+    background-color:#c3c3c3;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+}
+
+.input{
+    background-color: #c3c3c3;
+    border: none;
+    font-family: 'Cabin';
+    padding-left: 2px;
+}
+
+/*
+#search-btn{
+    border: solid;
+    border-radius: 5px;
+    padding: 2px 5px;
+
+}
+*/
+
+::placeholder{
+    color: black;
+}
+
+
+   
+
+
